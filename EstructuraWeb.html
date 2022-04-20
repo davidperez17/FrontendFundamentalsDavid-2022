@@ -1,61 +1,79 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Primera Pagina Web</title>
-  </head>
-  <body></body>
-</html>
 
-<!-- -------------------------------------------------------------------- -->
+  <!-- -------------------------------------------------------------------- -->
+  <!-- Define que es un documento de HTML5 -->
+  <!DOCTYPE html>
 
-<!-- Define que es un documento de HTML5 -->
-<!DOCTYPE html>
+  <!-- Es el elemento raiz de la html | Lang = Idioma -->
+  <html lang="es">
+    <!-- Contiene meta datos acerca del la pagina  -->
+    <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<!-- Es el elemento raiz de la html | Lang = Idioma -->
-<html lang="es">
-  <!-- Contiene meta datos acerca del la pagina  -->
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- Titulo de la pagina web -->
-    <title>Primera Pagina Web</title>
-  </head>
-  <!-- Cuerpo del Documento | Todo elemento visible de la pagina web -->
-  <body>
-    <!-- Search Engine Optimization (SEO = Optimización para motores de búsqueda) -->
-    <!-- ! Encabezado -->
-    <!-- <h1>Encabezado 1</h1>
+      <!-- Titulo de la pagina web -->
+      <title>Primera Pagina Web</title>
+    </head>
+    <!-- Cuerpo del Documento | Todo elemento visible de la pagina web -->
+    <body>
+      <!-- Search Engine Optimization (SEO = Optimización para motores de búsqueda) -->
+      <!-- ! Encabezado -->
+      <!-- <h1>Encabezado 1</h1>
          <h2>Encabezado 2</h2>
          <h3>Encabezado 3</h3>
          <h4>Encabezado 4</h4>
          <h5>Encabezado 5</h5>
          <h6>Encabezado 6</h6> -->
+         
+         <h1>Encabezado 1</h1>
+         <h2>Encabezado 2</h2>
+         <h3>Encabezado 3</h3>
+         <h4>Encabezado 4</h4>
+         <h5>Encabezado 5</h5>
+         <h6>Encabezado 6</h6>
+         
+         <hr>
 
-    <!-- ! Parrafo -->
-    <!-- 
+      <!-- ! Parrafo -->
+      <!-- 
       <p> define el parrafo </p>
       <br /> un salto de linea
       <hr> ruptura tematica; linea horizontal
 
       <pre> texto de formato previo 
      -->
+     <h1>Parrafos</h1>
+     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum aspernatur nobis <br /> suscipit error possimus. Sed similique ipsam, dolor tempore eos corporis aut distinctio vitae commodi suscipit <br /> rem debitis, explicabo nulla.
+       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum dolore, <br/> modi perspiciatis quidem accusantium consequatur dolor minima,  blanditiis unde minus ea assumenda temporibus doloribus in earum suscipit illo dolorem dolorum. Dolorem debitis explicabo minus alias delectus necessitatibus tenetur pariatur illum inventore quam! Possimus neque facilis accusantium. Commodi non dolorum quos.
+     </p>
 
-    <!-- ! Atributos  -->
 
-    <!-- href = especifica la url a la que va el enlace 
+
+     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis temporibus ullam adipisci deleniti velit ipsam laudantium, illum ad atque et accusamus doloremque expedita ipsum obcaecati magnam culpa ex ea dolor.</p>
+
+     <pre>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+       
+      
+             Minus corrupti et molestiae laboriosam, dolorum nulla tempora a, voluptas ipsa culpa eveniet atque hic cupiditate ex accusantium itaque natus neque assumenda?</pre>
+
+
+     <!-- ctr+shift+i -->
+      <!-- ! Atributos  -->
+
+      <!-- href = especifica la url a la que va el enlace 
         src = especifica la ruta a la imagen(multimedia) que se va a mostrar
 
         style = agregar estilo a un elemento
         title = se mostarar como informacion cuando pasa por encima el cursor
     -->
+<!-- anchors -->
+   <p>Puede revisar el enlance <a href="https://unsplash.com">aqui</a> </p>
+    <img src="./imagen.jpg" alt="imagen" width="300" height="300">
 
-    <!-- ! Elementos de Formato -->
-    <!-- 
+   <!-- TODO Investigar como abrir un link sin tener que cambiar ventana -->
+ 
+      <!-- ! Elementos de Formato -->
+      <!-- 
       NO estilo
       <b>- Texto en negrita
       <strong>- Texto importante
@@ -65,15 +83,15 @@
       <small>- Texto más pequeño
      -->
 
-    <!-- ! Div -->
-    <!-- Define una división o una sección en un documento html -->
-    <!-- La etiqueta se utiliza como contenedor de elementos HTML, que luego se diseñan con CSS o se manipulan con JavaScript. -->
-    <!-- La etiqueta se diseña fácilmente usando el atributo class o id. -->
-    <!-- Ejemplo : https://www.netflix.com/gt/ -->
+      <!-- ! Div -->
+      <!-- Define una división o una sección en un documento html -->
+      <!-- La etiqueta se utiliza como contenedor de elementos HTML, que luego se diseñan con CSS o se manipulan con JavaScript. -->
+      <!-- La etiqueta se diseña fácilmente usando el atributo class o id. -->
+      <!-- Ejemplo : https://www.netflix.com/gt/ -->
 
-    <!-- * HTML Semantico -->
-    <!-- ver https://ahrefs.com/blog/es/wp-content/uploads/2020/07/semantic-search_es.png -->
-    <!-- 
+      <!-- * HTML Semantico -->
+      <!-- ver https://ahrefs.com/blog/es/wp-content/uploads/2020/07/semantic-search_es.png -->
+      <!-- 
       <article> - Contenido independiente (Mensajes del foro,Publicaciones de blog,Comentarios del usuario,Artículos del periódico etc.)
 
       <aside> - contenido indirectamente relacionado (https://agn.gt)
@@ -90,7 +108,8 @@
       <section> - Seccion en el documento (intro,noticias,informacion contacto etc)
      
       <!-- TODO Tarea Buscar los elementos semanticos restantes  -->
-    <!-- TODO Pagina web semantica usando al menos 4 elemtos semanticos (tema libre) -->
-    -->
-  </body>
+      <!-- TODO Pagina web semantica usando al menos 4 elemtos semanticos (tema libre) -->
+    
+    </body>
+  </html>
 </html>
