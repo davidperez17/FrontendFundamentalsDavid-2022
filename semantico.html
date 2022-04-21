@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      display: grid;
+      grid-template-areas:
+        "header header"
+        "nav nav"
+        "main main"
+        "footer footer";
+
+      justify-content: center;
+      align-items: stretch;
+      text-align: center;
+    }
+    header {
+      padding: 20px;
+      grid-area: header;
+      background-color: red;
+    }
+    nav {
+      padding: 20px;
+      grid-area: nav;
+      background-color: rgb(132, 233, 38);
+    }
+    nav ul {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      list-style: none;
+    }
+    main {
+      padding: 20px;
+      grid-area: main;
+      background-color: yellow;
+
+      display: grid;
+      grid-template-areas: "article aside";
+    }
+    article {
+      padding: 20px;
+      grid-area: article;
+      background-color: gray;
+    }
+    section {
+      padding: 20px;
+      grid-area: section;
+      background-color: rgba(250, 250, 250, 0.541);
+    }
+    aside {
+      padding: 20px;
+      grid-area: aside;
+      background-color: maroon;
+    }
+    footer {
+      padding: 20px;
+      grid-area: footer;
+      background-color: purple;
+    }
+
+    @media screen and (max-width: 768px) {
+      body {
+        grid-template-areas:
+          "header header"
+          "nav nav"
+          "main main"
+          "footer footer";
+      }
+      main {
+        grid-template-areas:
+          "article"
+          "aside";
+      }
+    }
+  </style>
+  <body>
+    <header>
+      <h1>Header</h1>
+    </header>
+    <nav>
+      <ul>
+        <li>Inicio</li>
+        <li>Contacto</li>
+        <li>registrar</li>
+      </ul>
+    </nav>
+    <main>
+      <h1>main</h1>
+      <article>
+        <h1>Article</h1>
+        <section>
+          <h2>subtitle</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum nulla
+            illo fuga, ab sit, perspiciatis reiciendis nihil sequi facere dolor
+            illum praesentium assumenda laboriosam exercitationem voluptates
+            fugiat perferendis. Aperiam, earum!
+          </p>
+        </section>
+        <section>
+          <h2>subtitle 2</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut,
+            debitis. Velit a ut nisi minus id, dolorum quis dicta quibusdam
+            sapiente optio. Voluptate recusandae qui placeat? Eligendi fugiat
+            laudantium ducimus.
+          </p>
+        </section>
+      </article>
+      <aside>
+        <h2>Contenido No relacionado</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste odio
+          accusamus atque mollitia omnis, libero distinctio, aperiam
+          reprehenderit repellat, sit eum! Eaque ex unde magni nihil iure
+          architecto debitis soluta.
+        </p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti
+          fuga laborum quos voluptatem praesentium dolorem reprehenderit quas
+          nostrum ullam unde? Modi dolor vel eum ipsum numquam animi magnam
+          consequuntur doloribus.
+        </p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione
+          voluptate ducimus at quibusdam rem odio sint, eum dicta aliquid.
+          Blanditiis, repellendus voluptate accusantium nobis sint ipsum dolores
+          sit saepe nemo. Lorem ipsum, dolor sit amet consectetur adipisicing
+          elit. Ratione voluptate ducimus at quibusdam rem odio sint, eum dicta
+          aliquid. Blanditiis, repellendus voluptate accusantium nobis sint
+          ipsum dolores sit saepe nemo. Lorem ipsum, dolor sit amet consectetur
+          adipisicing elit. Ratione voluptate ducimus at quibusdam rem odio
+          sint, eum dicta aliquid. Blanditiis, repellendus voluptate accusantium
+          nobis sint ipsum dolores sit saepe nemo. Lorem ipsum, dolor sit amet
+          consectetur adipisicing elit. Ratione voluptate ducimus at quibusdam
+          rem odio sint, eum dicta aliquid. Blanditiis, repellendus voluptate
+          accusantium nobis sint ipsum dolores sit saepe nemo.
+        </p>
+      </aside>
+    </main>
+    <footer>
+      <h1>footer</h1>
+    </footer>
+  </body>
+</html>
