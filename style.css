@@ -1,0 +1,28 @@
+* {
+  background-color: white;
+}
+
+#titulo {
+  color: coral;
+  font-size: 20px;
+}
+
+.texto {
+  color: cornflowerblue;
+  font-size: 30px;
+  background-color: crimson;
+}
+h1,
+h2,
+h3 {
+  background-color: red;
+  font-size: 60px;
+}
+
+.principal {
+  background-color: deeppink;
+}
+
+.box {
+  font-size: 60px;
+}
