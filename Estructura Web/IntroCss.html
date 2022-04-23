@@ -125,3 +125,79 @@ Para seleccionar elementos con una clase específica, escriba un carácter de pu
 <!--  selecciona todos los elementos HTML con las mismas definiciones de estilo. -->
 
 <!-- TODO Ejemplo <p>, <h1>, <h2> -->
+
+<!--  ----------------------------------------------------------------------------------------- -->
+
+<!-- ! El orden si IMPORTA -->
+<!-- * Orden en Cascada -->
+
+<!-- -Cuando dos reglas tienen la especificidad, se aplica la que aparece en último lugar en el CSS. -->
+
+<!-- ! El navegador, para saber que bloque de estilos tiene prioridad sobre los demás, analiza (por orden) tres conceptos clave del código CSS: su importancia, su especificidad y su orden. Veamos en que se basa cada uno de ellos. -->
+
+<!-- * Importancia  -->
+
+<!-- ? !Important se usa: 
+consiguiendo que la regla en cuestión tenga prioridad sobre las demás, 
+independientemente del nivel o la altura a la que estén
+
+(MALA PRACTICA; uso en casos extremos)
+-->
+
+<!-- * Especificidad | uno de los criterios más importantes del Css-->
+
+<!-- * Especificidad | selectores-->
+
+<!-- TODO Ejemplo: -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    p {
+      color: red;
+    }
+
+    p#diferente {
+      color: maroon;
+    }
+
+    #diferente {
+      color: blue;
+    }
+    .diferente {
+      color: blueviolet;
+    }
+    p.diferente {
+      color: darksalmon;
+    }
+    div p {
+      background-color: blue;
+    }
+  </style>
+  <body>
+    <p id="diferente">Numero</p>
+    <p class="diferente">Numero</p>
+    <div>
+      <p>Numero</p>
+      <p>Numero</p>
+    </div>
+  </body>
+</html> -->
+
+<!-- * Orden  -->
+<!-- 
+1.) Css en linea - en un elemento HTML es el que tiene mayor precedencia, por lo que siempre será el que tenga prioridad sobre otras reglas CSS.
+
+
+2.)Css Interno - definido a través de bloques <style> en el propio documento HTML será el siguiente a tener en cuenta en orden de prioridad.
+
+
+3.)Css Externo -  son la tercera opción de prioridad a la hora de tomar en cuenta las reglas CSS. Son aquellos que se relacionan en un documento HTML a través de la etiqueta <link>. -->
+
+<!-- Crear una mini página incluyendo los selectores para darle estilo a los elementos; tema libre -->
