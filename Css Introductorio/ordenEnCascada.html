@@ -1,0 +1,86 @@
+<html>
+  <style>
+    body {
+      color: green;
+    }
+    h1 {
+      color: blue;
+    }
+  </style>
+  <body id="#padre">
+    <div>
+      <h1 id="titulo">Soy verde</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore,
+        voluptates? Doloremque perspiciatis officia, doloribus, quo dolor,
+        voluptatem voluptates suscipit at accusantium corporis voluptatibus
+        eaque. Laborum eum officia eligendi nobis saepe.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio
+        doloremque, id aliquam neque deserunt laudantium blanditiis rerum, eius
+        possimus dolores voluptatum ea repudiandae iusto amet exercitationem
+        reprehenderit mollitia velit ullam!
+      </p>
+    </div>
+  </body>
+</html>
+<!-- * Especificidad -->
+
+<!-- La especificidad es la manera mediante la cual los navegadores deciden qué valores de una propiedad CSS son más relevantes para un elemento y, por lo tanto, serán aplicados. -->
+
+<!-- ? Por los tipos de selectores -->
+
+<!-- * Elemento,Clase,ID -->
+
+<!-- ? Los estilos en linea -->
+
+<!-- Todo Ejemplo -->
+<!-- 
+<style>
+  p {
+    color: red;
+  }
+</style>
+<body>
+  <p style="color: green">Esto es de color verde</p>
+</body> -->
+
+<!-- ! Proximidad en el árbol -->
+
+<!-- <html>
+  <style>
+    html h1 {
+      color: green;
+    }
+
+    div h1 {
+      color: blue;
+    }
+  </style>
+  <body>
+    <div>
+      <h1>Soy verde</h1>
+    </div>
+  </body>
+</html> -->
+
+<!-- * Declaración directa vs estilos heredados -->
+
+<!-- Los estilos para elementos objetivo de una declaración directa siempre tienen preferencia sobre los estilos heredados, sin importar la especificidad de la regla heredada. -->
+
+<!-- <html>
+  <style>
+    #padre {
+      color: green;
+    }
+    h1 {
+      color: blue;
+    }
+  </style>
+  <body id="#padre">
+    <div>
+      <h1 id="titulo">Soy verde</h1>
+    </div>
+  </body>
+</html> -->
