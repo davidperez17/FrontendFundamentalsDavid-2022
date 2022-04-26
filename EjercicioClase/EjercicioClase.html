@@ -1,14 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Imagen / Icono -->
+    <link
+      rel="shortcut icon"
+      href="https://cdn-icons-png.flaticon.com/512/7083/7083932.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./Ejercicio.css" />
+
     <title>Ejercicio En clase</title>
   </head>
   <body>
+    <!-- Encabezado - Header -->
     <header>
-      <img src="./logo.png" alt="logo" width="50" height="auto" />
+      <img id="logo" src="./logo.png" alt="logo" />
       <h1>Película</h1>
       <nav>
         <a href="">inicio</a>
@@ -16,9 +25,12 @@
         <a href="">películas</a>
       </nav>
     </header>
+    <!-- Nuestro Contenido Principal -->
     <main>
+      <!-- Un articulo -->
       <article>
         <h2>Historia</h2>
+        <!-- Sección Precinematografía -->
         <section>
           <h3>Precinematografía</h3>
           <p>
@@ -32,11 +44,19 @@
             encontrar nuevas salidas exigió la constante aplicación de la
             técnica y de la investigación sobre los nuevos descubrimientos.
           </p>
+
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus
+            eveniet quasi quibusdam non sed atque. Laboriosam, itaque facere
+            veniam officiis dolor aliquam accusantium asperiores consequuntur
+            modi aliquid labore unde non!
+          </p>
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Le-galop-de-daisy.jpg/220px-Le-galop-de-daisy.jpg"
             alt="Precinematografía"
           />
         </section>
+        <!-- Sección películas -->
         <section>
           <h3>Primeras películas</h3>
           <p>
@@ -49,12 +69,21 @@
             de la cámara, se desarrollaron como formas efectivas de contar una
             historia con una película.
           </p>
+          <img
+            src="https://images.unsplash.com/photo-1580746353679-aa5dee1ac3e3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+            alt="cine"
+            width="300"
+            height="auto"
+          />
         </section>
       </article>
+      <!-- Contenido Relacionado -->
       <aside>
         <a href="https://es.wikipedia.org/wiki/Wikipedia:Portada">Portada</a>
-        <a href="">Portal de la comunidad</a>
-        <a href="">Actualidad</a>
+        <a href="https://es.wikipedia.org/wiki/Portal:Comunidad" target="blank"
+          >Portal de la comunidad</a
+        >
+        <a href="#">Actualidad</a>
         <a href="">Cambios recientes</a>
         <a href="">Páginas nuevas</a>
         <a href="">Página aleatoria</a>
@@ -63,7 +92,8 @@
         <a href="">Notificar un error</a>
       </aside>
     </main>
-    <footer>
+    <!-- Finaliza el Main o contenido principal -->
+    <footer id="">
       <h6>Esta página se editó por última vez el 19 mar 2022 a las 02:17.</h6>
       <h6>
         El texto está disponible bajo la Licencia Creative Commons Atribución
