@@ -1,22 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap");
+
 body {
-  width: 100%;
+  width: auto;
   height: 100%;
   background-color: #add7f6;
 }
 
 header {
-  width: 90%;
-  height: 160px;
+  width: 95%;
+  height: 250px;
 
   background-color: #fff;
   margin: 0 auto;
 
   text-align: center;
+
+  border-radius: 10px;
 }
 
 #logo {
-  width: 50px;
+  width: 60px;
   height: auto;
 }
 
-/* Ultimo Visto en clase 26/04/2022 */
+h1 {
+  font-size: 60px;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  color: rgb(100, 100, 100);
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+}
+
+main {
+  width: 95%;
+  height: 550px;
+  background-color: #fff;
+
+  margin: 0 auto;
+
+  text-align: center;
+  border-radius: 10px;
+  /* border: 1px solid; */
+}
+
+h2 {
+  font-size: 40px;
+  font-family: "Roboto", sans-serif;
+}
+
+h3 {
+  text-align: left;
+  font-size: 25px;
+
+  color: rgb(69, 69, 69);
+}
+p {
+  color: rgb(103, 103, 103);
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+.parrafo-izq {
+  text-align: left;
+}
+
+.parrafo-center {
+  text-align: center;
+}
+
+.float-right {
+  width: 200px;
+  float: right;
+}
+
+.right {
+  text-align: right;
+}
+
+.parrafo-justify {
+  text-align: justify;
+}
+
+.float-left {
+  width: 300px;
+  height: auto;
+  float: left;
+}
+
+aside {
+  background-color: rgb(252, 139, 156);
+}
+
+footer {
+  width: 95%;
+  height: auto;
+
+  margin: 0 auto;
+  text-align: center;
+
+  color: rgb(88, 88, 88);
+  background-color: #fff;
+
+  border-radius: 10px;
+}
+/* Ultimo Visto en clase 27/04/2022 */
