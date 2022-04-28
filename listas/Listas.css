@@ -1,0 +1,18 @@
+ol li {
+  list-style-type: decimal-leading-zero;
+}
+
+ul li {
+  list-style-image: url(./icono2.png);
+}
+
+/* ul li {
+  list-style-position: inside;
+  list-style-position: outside;
+
+  border: 1px solid;
+} */
+
+ul li {
+  list-style: square url(./icono2.png) inside;
+}
