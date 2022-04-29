@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&family=Square+Peg&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,200;1,500&display=swap");
+
+table {
+  /* quitar borde entre las celdas */
+  /* border-collapse: collapse; */
+  width: 100%;
+  border: 1px solid rgb(202, 201, 201);
+}
+
+caption {
+  font-size: 30px;
+  font-family: "Square Peg", cursive;
+
+  background-color: rgb(255, 154, 154);
+  color: #fff;
+}
+
+th {
+  border: 1px solid black;
+  color: rgb(255, 153, 0);
+
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 500;
+}
+
+td {
+  border: 1px solid black;
+
+  text-align: center;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 200;
+}
