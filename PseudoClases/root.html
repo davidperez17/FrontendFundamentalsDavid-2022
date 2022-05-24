@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Root</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+    :root {
+      /* Colores */
+      --colorcito-deFondo: red;
+      --color: white;
+      --background-color: #ab0505;
+      --2: blue;
+
+      /* fuente */
+      --font-size: 25px;
+      --fuente-Chida: 'Lato', sans-serif;
+
+      /* display */
+      --barra-Horizontal-2: inline;
+
+    }
+
+    .editado {
+      background-color: var(--colorcito-deFondo);
+      color: var(--2);
+      font-size: var(--font-size);
+      font-family: var(--fuente-Chida);
+    }
+
+    .container {
+      width: 300px;
+      height: 200px;
+
+      background-color: var(--background-color);
+    }
+
+    li {
+      display: var(--barra-Horizontal-2);
+    }
+  </style>
+</head>
+
+<body>
+  <p class="editado">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo temporibus hic aliquid rerum,
+    aspernatur accusamus
+    eligendi dolorum laborum voluptate tempore, quam similique consequuntur quia! Veniam magni minus accusamus natus
+    quasi.</p>
+
+  <div class="container"></div>
+
+  <ul>
+    <li>askldjasd</li>
+    <li>asdasdas</li>
+    <li>asdasd</li>
+  </ul>
+</body>
+
+</html>
