@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex Box</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: rgb(219, 219, 219);
+    }
+
+    main {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+
+    section:first-child {
+      background-color: red;
+    }
+
+    section {
+      width: 100%;
+      height: auto;
+
+      background-color: #fff;
+      text-align: center;
+
+      /* border: 1px solid; */
+      padding: 20px;
+      margin: 10px;
+    }
+
+    article {
+      display: flex;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <section>
+      <article>
+        <h2>Titulo Importante</h2>
+        <img
+          src="https://images.unsplash.com/photo-1638913972776-873fc7af3fdf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+          width="300" alt="img">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta inventore minima excepturi dignissimos veniam
+          perferendis similique? Libero tenetur voluptatem veniam aperiam cupiditate provident laborum. Nisi nesciunt
+          fugit quae quibusdam. Necessitatibus?</p>
+      </article>
+    </section>
+
+    <section>
+      <article>
+        <h2>Titulo Importante - 2</h2>
+        <img
+          src="https://images.unsplash.com/photo-1638913971789-667874197280?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+          width="300" alt="img-2">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil id magni tenetur tempora minima eligendi!
+          Eaque molestiae, illum excepturi cupiditate, minima necessitatibus ipsum culpa architecto voluptas
+          reprehenderit ad, quia esse.</p>
+      </article>
+    </section>
+
+  </main>
+</body>
+
+</html>

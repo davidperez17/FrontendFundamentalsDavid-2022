@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex Wrap</title>
+  <style>
+    .container {
+      width: 100%;
+      height: auto;
+
+      background-color: rgb(0, 0, 0);
+      display: flex;
+      /* acortador */
+      flex-flow: row-reverse wrap-reverse;
+
+      /* propiedades individuales */
+      /* flex-direction: row-reverse;
+      flex-wrap: wrap-reverse; */
+    }
+
+    div {
+      width: 100px;
+      height: auto;
+
+      border: 1px solid;
+      background-color: blue;
+      color: white;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="container">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+    <div>9</div>
+  </div>
+</body>
+
+</html>
