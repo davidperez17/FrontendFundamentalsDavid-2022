@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+/* ### Primary */
+:root {
+  --Softblue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+
+  /* ### Neutral */
+
+  --mainBG: hsl(217, 54%, 11%);
+  --cardbg: hsl(216, 50%, 16%);
+  --line: hsl(215, 32%, 27%);
+  --White: hsl(0, 0%, 100%);
+
+  /* ### Fuente */
+
+  --mainFont: "Outfit", sans-serif;
+}
+* {
+  padding: 0;
+  margin: 0;
+
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  background-color: var(--mainBG);
+  color: white;
+  gap: 20px;
+}
+/* Card */
+.card {
+  width: 380px;
+  height: auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+
+  /* border: 1px solid white; */
+  padding: 30px;
+
+  background-color: var(--cardbg);
+
+  border-radius: 15px;
+
+  font-family: var(--mainFont);
+}
+
+.card > img {
+  width: 100%;
+  border-radius: 10px;
+}
+/* Finaliza Card */
+
+/* Texto */
+.texto {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  flex-direction: column;
+  gap: 20px;
+
+  font-size: small;
+}
+
+.texto h1 {
+  font-size: 2.5rem;
+}
+
+.texto p {
+  font-size: 2rem;
+  color: var(--);
+  font-weight: 300;
+  color: var(--Softblue);
+}
+/* Finaliza texto */
+
+/* detalle */
+.detalles {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.eth,
+.time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  font-size: 1.8rem;
+}
+
+.eth {
+  color: var(--Cyan);
+}
+
+.time {
+  color: var(--Softblue);
+}
+
+hr {
+  opacity: 0.2;
+  width: 100%;
+}
+
+.creator {
+  width: 100%;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+
+.creator img {
+  width: 10%;
+
+  border-radius: 50%;
+  border: 1px solid white;
+}
+.creator p {
+  font-size: 2rem;
+}
+.creator span {
+  color: var(--Softblue);
+}
