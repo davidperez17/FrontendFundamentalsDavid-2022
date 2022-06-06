@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rotate</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    body {
+      width: 100vw;
+      height: 100vh;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      flex-direction: column;
+    }
+
+    .box {
+      width: 150px;
+      height: 150px;
+
+      transition: 4s;
+      background-color: red;
+    }
+
+    .box:hover {
+      transform: rotate(360deg);
+    }
+
+    p {
+      text-align: center;
+    }
+
+    .none {
+      position: relative;
+    }
+
+    p {
+      top: 43%;
+      left: 26%;
+      position: absolute;
+      z-index: 2;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="none">
+    <p>Cargando..</p>
+    <div class="box">
+    </div>
+  </div>
+</body>
+
+</html>

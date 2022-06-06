@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scale</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    body {
+      width: 100vw;
+      height: 100vh;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    button {
+      border: none;
+      background-color: red;
+      color: white;
+
+      transition: 1s;
+      padding: 20px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      transform: scale(1.2);
+    }
+  </style>
+</head>
+
+<body>
+  <button>Enviar</button>
+</body>
+
+</html>
