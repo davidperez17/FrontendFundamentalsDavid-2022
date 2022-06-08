@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transition</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=League+Spartan&display=swap');
+
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    body {
+      width: 100vw;
+      height: 100vh;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .img-container {
+      width: 10%;
+      height: auto;
+
+      background-color: rgb(221, 221, 221);
+      border-radius: 0 0 5px 5px;
+      overflow: hidden;
+      transition: all 2s cubic-bezier(1, 0.03, 0.05, 1.56);
+    }
+
+    .img-container:hover {
+      width: 20%;
+
+    }
+
+    .img-container img {
+      width: 100%;
+    }
+
+    .texto {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      font-family: 'League Spartan', sans-serif;
+      font-size: 1.2vw;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="img-container">
+    <img
+      src="https://images.unsplash.com/photo-1654632042103-bea38e54f0f2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=643&q=80"
+      alt="img-container">
+    <div class="texto">
+      <h3>David Pérez</h3>
+    </div>
+  </div>
+</body>
+
+</html>

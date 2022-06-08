@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transition Duration</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+
+      box-sizing: border-box;
+    }
+
+    body {
+      width: 100vw;
+      height: 100vh;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .box,
+    .box-1 {
+      width: 150px;
+      height: 150px;
+
+      background-color: green;
+    }
+
+    .box {
+      transition-delay: 2s;
+      transition-duration: 5s;
+    }
+
+    .box:hover {
+      background-color: red;
+    }
+
+    .box-1 {
+      transition-duration: 2s;
+      transition-property: all;
+    }
+
+    .box-1:hover {
+      width: 300px;
+      height: 200px;
+      background-color: yellow;
+      border-radius: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box"></div>
+  <div class="box-1"></div>
+</body>
+
+</html>
