@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Keyframes</title>
+  <style>
+    body {
+      width: 100vw;
+      height: 100vh;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .box {
+      width: 150px;
+      height: 150px;
+
+      position: relative;
+      background-color: red;
+      /* animation-name: mover;
+      animation-duration: 4s;
+      animation-iteration-count: 1;
+      animation-direction: normal;
+      animation-timing-function: cubic-bezier(0.72, 0.39, 0, 1.01);
+      animation-fill-mode: both; */
+
+      animation: mover 4s 1 normal cubic-bezier(0.72, 0.39, 0, 1.01) forwards;
+    }
+
+    @keyframes mover {
+
+      0% {
+        top: 0;
+        left: 0;
+
+      }
+
+      25% {
+        top: 150px;
+        left: 0;
+
+        background-color: yellow;
+        border-radius: 10%;
+        transform: rotate(15deg);
+      }
+
+      50% {
+        top: 150px;
+        left: 150px;
+
+        background-color: gray;
+        border-radius: 20%;
+        transform: rotate(-15deg);
+      }
+
+      75% {
+        top: 0;
+        left: 150px;
+
+        background-color: blue;
+        border-radius: 30%;
+        transform: rotate(15deg);
+
+      }
+
+      100% {
+        top: 0;
+        left: 150px;
+
+        background-color: orange;
+        border-radius: 40%;
+        transform: rotate(0);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box"></div>
+</body>
+
+</html>
