@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      width: 100vw;
+      height: 100vh;
+
+      display: grid;
+      grid-template-areas:
+        "nav nav"
+        "article-1 aside-1"
+        "article-1 aside-2"
+        "article-1 aside-3"
+        "article-1 aside-4"
+        "article-2 footer";
+
+      background-color: #000;
+      gap: 20px;
+
+      font-size: 2rem;
+      text-align: center;
+    }
+
+    .nav {
+      grid-area: nav;
+      background-color: #fff;
+    }
+
+    .article-1 {
+      grid-area: article-1;
+      background-color: #fff;
+    }
+
+    .aside-1 {
+      grid-area: aside-1;
+      background-color: #fff;
+
+    }
+
+    .aside-2 {
+      grid-area: aside-2;
+      background-color: #fff;
+
+    }
+
+    .aside-3 {
+      grid-area: aside-3;
+      background-color: #fff;
+
+    }
+
+    .aside-4 {
+      grid-area: aside-4;
+      background-color: #fff;
+
+    }
+
+    .article-2 {
+      grid-area: article-2;
+      background-color: #fff;
+    }
+
+    .footer {
+      grid-area: footer;
+      background-color: #fff;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="nav">nav</nav>
+  <article class="article-1">Article-1</article>
+  <aside class="aside-1">aside-1</aside>
+  <aside class="aside-2">aside-2</aside>
+  <aside class="aside-3">aside-3</aside>
+  <aside class="aside-4">aside-4</aside>
+  <article class="article-2">Article-2</article>
+  <footer class="footer">Footer</footer>
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Justify</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      width: 100vw;
+      height: 100vh;
+      background-color: #000;
+      color: #000;
+      font-size: 2rem;
+
+    }
+
+    .container {
+      width: 100%;
+      height: auto;
+
+      display: grid;
+      grid-template-columns: repeat(3, 300px);
+      grid-template-rows: repeat(3, 300px);
+
+      border: 1px solid white;
+
+
+      /* Contendor */
+
+      /* place-content: center; */
+      justify-content: center;
+      align-content: center;
+
+      /* elementos internos */
+
+      /* place-items: center; */
+      justify-items: center;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .container div {
+      width: 100px;
+      height: 100px;
+
+      border: 1px solid white;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      background-color: #fff;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+    <div class="box">4</div>
+    <div class="box">5</div>
+    <div class="box">6</div>
+    <div class="box">7</div>
+    <div class="box">8</div>
+    <div class="box">9</div>
+  </div>
+</body>
+
+</html>
