@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      width: 100vw;
+      height: 100vh;
+
+      display: grid;
+      grid-template-areas:
+        "nav nav aside"
+        "article-1 article-1 aside"
+        "article-2 article-2 article-2"
+        "footer footer footer";
+      color: white;
+      text-align: center;
+      gap: 10px;
+    }
+
+    .nav {
+      grid-area: nav;
+      background-color: #000;
+    }
+
+    .aside {
+      grid-area: aside;
+      background-color: red;
+    }
+
+    .article-1 {
+      grid-area: article-1;
+      background-color: maroon;
+    }
+
+    .article-2 {
+      grid-area: article-2;
+      background-color: blue;
+    }
+
+    .footer {
+      grid-area: footer;
+      background-color: lightgreen;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="nav">NAV</nav>
+  <article class="article-1">ARTICLE 1</article>
+  <aside class="aside">ASIDE</aside>
+  <article class="article-2">ARTICLE 2</article>
+  <footer class="footer">FOOTER</footer>
+</body>
+
+</html>
