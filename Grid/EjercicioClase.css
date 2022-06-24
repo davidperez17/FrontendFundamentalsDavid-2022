@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -25,6 +26,8 @@ body {
 
   padding: 0 100px;
   gap: 10px;
+
+  font-family: "Montserrat", sans-serif;
 }
 
 /* nav */
@@ -49,6 +52,8 @@ body {
   /* border: none; */
   padding: 10px 15px;
   border-radius: 5px;
+
+  font-family: "Montserrat", sans-serif;
 }
 
 .btn-login {
@@ -85,8 +90,9 @@ body {
     "marca"
     "testi"
     "info"
-    "mas-info";
-  gap: 10px;
+    "mas-info"
+    "map";
+  gap: 20px;
 }
 
 /* Subs */
@@ -101,7 +107,7 @@ body {
   align-content: center;
   align-items: center;
 
-  background-color: rgb(155, 155, 155);
+  /* background-color: rgb(155, 155, 155); */
 }
 
 .subs-item-1,
@@ -113,13 +119,45 @@ body {
 }
 
 .subs-item-1 {
-  background: url(https://images.unsplash.com/photo-1638913659248-776908ed6eae?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80)
-    center no-repeat;
-  background-size: cover;
+  animation: cambiar 10s linear infinite;
+}
+
+@keyframes cambiar {
+  0% {
+    background: url(https://images.unsplash.com/photo-1638913659248-776908ed6eae?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80)
+      center no-repeat;
+    background-size: cover;
+  }
+
+  25% {
+    background: url(https://images.unsplash.com/photo-1648737119422-2680a7e39089?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80)
+      center no-repeat;
+    background-size: cover;
+  }
+  50% {
+    background: url(https://images.unsplash.com/photo-1656039306242-0d36a34cda1d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80)
+      center no-repeat;
+    background-size: cover;
+  }
+  75% {
+    background: url(https://images.unsplash.com/photo-1648737965484-dd50b35532fb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80)
+      center no-repeat;
+    background-size: cover;
+  }
+  100% {
+    background: url(https://images.unsplash.com/photo-1656047073270-923adb446e8a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80)
+      center no-repeat;
+    background-size: cover;
+  }
 }
 
 .subs-item-2 {
   padding: 80px;
+}
+
+.subs-item-2 h2 {
+  color: #000;
+  text-align: center;
 }
 
 .subs-item-2 p {
@@ -150,7 +188,7 @@ body {
   grid-area: marca;
 
   border: 1px solid;
-  background-color: green;
+  background-color: rgba(232, 232, 232, 0.389);
   border-radius: 10px;
 
   display: grid;
@@ -178,12 +216,14 @@ body {
   grid-area: testi;
 
   border: 1px solid;
-  background-color: rgb(128, 124, 0);
+  /* background-color: rgb(207, 207, 207); */
   border-radius: 10px;
 
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: auto;
+
+  align-items: center;
 }
 
 .testi-item img {
@@ -191,6 +231,8 @@ body {
   height: 80%;
 
   object-fit: contain;
+
+  border-radius: 50%;
 }
 
 .testi-item p {
@@ -223,6 +265,13 @@ body {
   border-radius: 10px;
 }
 
+.info-item-1 p,
+.info-item-2 p {
+  color: #000;
+  font-size: 1.5rem;
+  width: 400px;
+}
+
 .info-item-2 {
   grid-area: info-item-2;
   background-color: rgb(142, 141, 141);
@@ -235,11 +284,6 @@ body {
   align-items: center;
 }
 
-.info-item-1 p,
-.info-item-2 p {
-  color: #000;
-}
-
 .info-item-3 {
   grid-area: info-item-3;
   border-radius: 10px;
@@ -249,20 +293,48 @@ body {
   height: 300px;
 
   object-fit: cover;
+  object-position: 0 -350px;
 }
 
 /* finaliza info */
 
+/* Mas info */
 .mas-info {
   width: 100%;
-  height: 300px;
 
   grid-area: mas-info;
 
   border: 1px solid;
-  background-color: rgb(199, 5, 5);
+  background-color: rgb(207, 207, 207);
   border-radius: 10px;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 300px 300px;
+
+  justify-items: center;
+  align-items: center;
 }
+
+/* Finaliza mas info */
+
+/* map */
+.map {
+  width: 100%;
+  height: 600px;
+
+  border-radius: 20px;
+  overflow: hidden;
+
+  grid-area: map;
+}
+.map iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Finaliza Mapa */
 
 .footer {
   width: 100%;
@@ -271,6 +343,17 @@ body {
   grid-area: footer;
 
   border: 1px solid;
-  background-color: rgb(199, 5, 89);
+  background-color: rgb(207, 207, 207);
   border-radius: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 20px;
+}
+
+.footer h3 {
+  font-size: 2rem;
+  color: #000;
 }
