@@ -45,6 +45,7 @@ p {
   width: 500px;
   font-size: 2rem;
 }
+
 .footer {
   grid-area: footer;
   background-color: #780202;
@@ -54,31 +55,8 @@ p {
   align-items: center;
 }
 
-@media screen and (max-width: 760px) {
-  body {
-    grid-template-areas:
-      "header"
-      "section-1"
-      "section-2"
-      "aside"
-      "footer";
-  }
-
-  .header {
-    background-color: blue;
-  }
-
-  .footer {
-    flex-direction: column;
-    gap: 10px;
-  }
-}
-section p {
-  font-size: 1rem;
-}
-
-section h2 {
-  font-size: 1.2rem;
+.footer img {
+  width: 50px;
 }
 
 /* @media screen and (max-width: 800px) {
@@ -89,5 +67,22 @@ section h2 {
       "section-1"
       "section-2"
       "footer";
+  }
+
+  .header {
+    background-color: blue;
+  }
+
+  section h2,
+  p {
+    width: 100%;
+    font-size: 1.3rem;
+  }
+
+  .footer {
+    flex-direction: column;
+  }
+  .footer img {
+    width: 40px;
   }
 } */

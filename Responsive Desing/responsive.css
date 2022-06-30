@@ -1,0 +1,25 @@
+body {
+  grid-template-areas:
+    "header"
+    "aside"
+    "section-1"
+    "section-2"
+    "footer";
+}
+
+.header {
+  background-color: blue;
+}
+
+section h2,
+p {
+  width: 100%;
+  font-size: 1.3rem;
+}
+
+.footer {
+  flex-direction: column;
+}
+.footer img {
+  width: 40px;
+}
