@@ -59,7 +59,7 @@ p {
   width: 50px;
 }
 
-/* @media screen and (max-width: 800px) {
+@media screen and (max-width: 800px) {
   body {
     grid-template-areas:
       "header"
@@ -85,4 +85,4 @@ p {
   .footer img {
     width: 40px;
   }
-} */
+}
