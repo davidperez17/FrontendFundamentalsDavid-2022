@@ -1,11 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Oranienbaum&display=swap");
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: var(--mainFont);
+  /* scroll-behavior: smooth; */
+}
+
+html {
+  font-size: 62.5%;
 }
 
 :root {
-  --mainColor: rgb(220, 220, 220);
+  --mainBgColor: rgb(0, 0, 0);
+  --mainColor: #fff;
+  --mainFont: "Oranienbaum", serif;
 }
 
 body {
@@ -30,21 +40,58 @@ body {
   height: 60px;
 
   border-radius: 30px;
-  background-color: var(--mainColor);
+  background-color: var(--mainBgColor);
 
   grid-area: nav;
+}
+
+.nav .lista {
+  width: 100%;
+  height: 100%;
+  list-style: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 10px;
+}
+
+.lista a {
+  color: var(--mainColor);
+  text-decoration: none;
+
+  font-size: 2rem;
 }
 /*Finaliza Nav */
 
 /* Section Principal */
 .section-principal {
   width: 100%;
-  height: 400px;
+  height: 300px;
 
   border-radius: 30px;
-  background-color: var(--mainColor);
+  background-color: var(--mainBgColor);
+  color: var(--mainColor);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
 
   grid-area: section-p;
+}
+.section-principal p {
+  width: 100%;
+  max-width: 200px;
+
+  font-size: 1.6rem;
+  text-align: justify;
+}
+
+.section-principal img {
+  width: 100%;
+  max-width: 200px;
 }
 /*Finaliza Section Principal */
 
@@ -59,8 +106,14 @@ body {
   max-width: 160px;
 
   height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-  background-color: var(--mainColor);
+  background-color: var(--mainBgColor);
+  color: var(--mainColor);
+  font-size: 1.7rem;
+
   border-radius: 40px;
 }
 .img-container {
@@ -76,13 +129,15 @@ body {
   gap: 10px;
 }
 
-.img-container img {
+.img-container .img {
   width: 100%;
   height: 200px;
 
-  background-color: var(--mainColor);
+  background-color: var(--mainBgColor);
   border-radius: 10px;
   border: 0 solid;
+
+  object-fit: cover;
 }
 .img-1 {
   grid-area: section-1;
@@ -104,18 +159,26 @@ body {
   width: 100%;
   height: 200px;
 
-  background-color: var(--mainColor);
+  background-color: var(--mainBgColor);
   grid-area: user;
   border-radius: 20px;
 }
 
 .user .title-user {
   width: 60%;
-  height: 30px;
+  height: 35px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   margin: 20px auto 0;
-  background-color: rgb(132, 132, 132);
+  background-color: rgba(0, 0, 0);
+  color: var(--mainColor);
 
+  font-size: 1.6rem;
+
+  border: 1px solid white;
   border-radius: 30px;
 }
 
@@ -123,7 +186,7 @@ body {
   width: 100%;
   height: auto;
 
-  margin-top: 35px;
+  margin-top: 45px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -137,14 +200,21 @@ body {
   width: 80%;
   height: 30px;
 
+  font-size: 1.8rem;
+
+  border: none;
+  background-color: #fff;
+
   border-radius: 30px;
-  background-color: rgb(98, 98, 98);
+  cursor: pointer;
 }
+
+/* Finaliza User */
 
 .footer {
   width: 100%;
   height: 150px;
-  background-color: var(--mainColor);
+  background-color: var(--mainBgColor);
   border-radius: 20px;
 
   display: flex;
@@ -165,9 +235,14 @@ body {
 
 .footer h2 {
   width: 100%;
-  max-width: 230px;
-
+  max-width: 250px;
   height: 50px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   background-color: rgb(116, 116, 116);
+  color: var(--mainColor);
   border-radius: 30px;
 }
