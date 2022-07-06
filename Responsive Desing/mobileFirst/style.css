@@ -225,6 +225,8 @@ body {
   align-items: center;
   gap: 10px;
 
+  padding: 0 10px;
+
   grid-area: footer;
 }
 
@@ -239,11 +241,13 @@ body {
 .footer h2 {
   width: 100%;
   max-width: 250px;
-  height: 50px;
+  height: 40px;
 
   display: flex;
   justify-content: center;
   align-items: center;
+
+  font-size: 1.3rem;
 
   background-color: rgb(116, 116, 116);
   color: var(--mainColor);
