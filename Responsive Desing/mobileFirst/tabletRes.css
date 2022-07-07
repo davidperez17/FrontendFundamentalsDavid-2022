@@ -1,0 +1,38 @@
+.lista a {
+  font-size: 2.4rem;
+}
+
+/* ---------- */
+
+.section-principal p {
+  font-size: 1.5rem;
+}
+
+/* ---------- */
+.sect-img .title {
+  font-size: 2rem;
+}
+.img-container {
+  flex-direction: row;
+}
+
+/* ----------- */
+
+.user .title-user {
+  font-size: 2.2rem;
+}
+
+.btn-container .login,
+.register {
+  font-size: 2rem;
+}
+
+/* -------------- */
+.footer img {
+  width: 60px;
+  height: 60px;
+}
+
+.footer h2 {
+  height: 60px;
+}

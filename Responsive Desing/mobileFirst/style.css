@@ -20,7 +20,10 @@ html {
 
 body {
   width: 100vw;
+  max-width: 1920px;
   height: auto;
+
+  margin: 0 auto;
 
   display: grid;
   grid-template-areas:
@@ -85,7 +88,8 @@ body {
 }
 .section-principal p {
   width: 100%;
-  max-width: 200px;
+  min-width: 100px;
+  max-width: 400px;
 
   font-size: 1.2rem;
   text-align: justify;
@@ -94,7 +98,8 @@ body {
 
 .section-principal img {
   width: 100%;
-  max-width: 200px;
+  min-width: 100px;
+  max-width: 300px;
 }
 /*Finaliza Section Principal */
 
@@ -109,6 +114,7 @@ body {
   max-width: 160px;
 
   height: 50px;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -124,6 +130,7 @@ body {
   height: auto;
 
   margin-top: 10px;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -189,7 +196,7 @@ body {
   width: 100%;
   height: auto;
 
-  margin-top: 45px;
+  margin-top: 35px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -201,7 +208,7 @@ body {
 .btn-container .login,
 .register {
   width: 80%;
-  height: 30px;
+  height: 40px;
 
   font-size: 1.8rem;
 
@@ -250,7 +257,8 @@ body {
 .footer h2 {
   width: 100%;
   max-width: 250px;
-  height: 40px;
+
+  height: 50px;
 
   display: flex;
   justify-content: center;
