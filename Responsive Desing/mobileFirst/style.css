@@ -5,7 +5,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: var(--mainFont);
-  /* scroll-behavior: smooth; */
+  scroll-behavior: smooth;
 }
 
 html {
@@ -206,12 +206,21 @@ body {
   font-size: 1.8rem;
 
   border: none;
-  background-color: #fff;
+  /* background-color: #fff; */
 
   border-radius: 30px;
   cursor: pointer;
 }
 
+.btn-container .login {
+  background-color: #323232;
+  color: var(--mainColor);
+}
+
+.btn-container .register {
+  background-color: #414141;
+  color: var(--mainColor);
+}
 /* Finaliza User */
 
 .footer {
@@ -249,7 +258,9 @@ body {
 
   font-size: 1.3rem;
 
-  background-color: rgb(116, 116, 116);
+  background-color: transparent;
   color: var(--mainColor);
+
+  border: 1px solid white;
   border-radius: 30px;
 }
