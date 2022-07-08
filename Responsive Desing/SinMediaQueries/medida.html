@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      height: 100vh;
+    }
+
+    .box {
+      /* width: clamp(100px, 50%, 300px); */
+      width: 50%;
+      min-width: 100px;
+      max-width: 600px;
+
+
+      height: 50%;
+      min-height: 100px;
+      max-height: 300px;
+
+      background-color: red;
+    }
+
+    .box p {
+      width: 100%;
+      /* font-size: clamp(1rem, 3vw, 2rem); */
+
+      /* Min, Ideal(max), max */
+      font-size: clamp(5px, 3vw, 50px);
+
+      /* font-size: 3vw; */
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <p>¡Buenos Días!</p>
+  </div>
+</body>
+
+</html>
