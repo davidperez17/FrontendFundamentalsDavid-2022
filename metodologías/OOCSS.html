@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container {
+      width: 600px;
+      height: 300px;
+      margin: 0 auto;
+    }
+
+    .nav {
+      width: clamp(200px, 100%, 1600px);
+      height: 50px;
+
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+
+    .brd-1 {
+      border: 1px solid;
+    }
+
+    .flex {
+      display: flex;
+    }
+
+    .g-5 {
+      gap: 5px;
+    }
+
+    .mt-10 {
+      margin-top: 10px;
+    }
+
+    .card {
+      width: 100%;
+      height: 100%;
+    }
+
+    .p-2 {
+      font-size: 2rem;
+    }
+
+    .p-3 {
+      font-size: 3rem;
+    }
+
+    .bg-red {
+      background-color: red;
+    }
+
+    .bg-green {
+      background-color: green;
+    }
+
+    .bg-orange {
+      background-color: orange;
+    }
+
+    .bg-gray {
+      background-color: gray;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container flex g-5">
+    <div class="card bg-orange p-2">UNO</div>
+    <div class="card bg-red p-3">DOS</div>
+    <div class="card bg-green p-2">TRES</div>
+  </div>
+
+  <div class="container bg-gray flex mt-10">
+    <div class="card bg-green"></div>
+    <div class="card bg-red"></div>
+    <div class="card bg-orange"></div>
+    <div class="card bg-red"></div>
+    <div class="card bg-green"></div>
+  </div>
+</body>
+
+</html>
